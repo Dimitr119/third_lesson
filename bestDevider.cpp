@@ -17,7 +17,7 @@ int main() {
   uint64_t bestDivider = number;
   uint32_t sumOfDigits = getSum(number);
 
-  for (size_t i = 1; i <= (number / 2); ++i) {
+  for (uint64_t i = 1; i <= (number / 2); ++i) {
     if (((number % i) == 0) && (getSum(i) > sumOfDigits)) {
       bestDivider = i;
     }
