@@ -5,7 +5,6 @@ int main() {
     int digit;
     uint counter = 0;
     uint summ = 0;
-    double aver;
     
     std::cout << "input numbers and I'll give summ and average: ";
     std::cin >> digit;
@@ -15,7 +14,7 @@ int main() {
         digit /= 10;
         ++counter;
     }
-    aver = (double)summ/counter;
+    double aver = static_cast<double>(summ) / counter;
 
     std::cout << "Summ = " << summ  << std::endl;
     std::cout << " average = " << aver << std::endl;
