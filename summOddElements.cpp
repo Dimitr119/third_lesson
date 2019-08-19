@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdint>
+#include <limits>
 
 int main() {
   std::cout << "Please, enter a count of input elements [1..50], each of element must be in range [-60..90] (I will calculate summ of odd elements): ";
